@@ -60,9 +60,9 @@ The following libraries have been included in this project.
 ```
 We need three first namespaces for working with strings and streams in the code.
 
-we need semaphore for handling the amount of threads  which can do calculate cells at the same time.
+We need semaphore for handling the amount of threads  which can calculate cells at the same time.
 
-we need thread to handle requests at the same time (when we call matrix_multiplication, the request is not finished yet and suddonly we call change_maximum_matrix_workers)
+We need thread to handle requests at the same time (when we call matrix_multiplication, the request is not finished yet and suddonly we call change_maximum_matrix_workers)
 ##
 ```c++
 class Matrix 
