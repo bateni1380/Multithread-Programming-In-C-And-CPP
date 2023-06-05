@@ -1,4 +1,6 @@
 ## Multithreaded Matrix Multiplication C++ Server
+This was a project for Operating System course tought by Dr. Bejani in June 2023 at Amirkabir University of Tecknology.
+
 This is a cpp server which provides multithreaded matrix multiplication using only boost library.
 
 ![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/3c4c4680-fada-41d4-986e-133dae4e0232)
