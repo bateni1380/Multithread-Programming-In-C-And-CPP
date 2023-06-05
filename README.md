@@ -1,4 +1,4 @@
-## Multithreaded Matrix Multiplication CPP Server
+## Multithreaded Matrix Multiplication C++ Server
 This is a cpp server which provides multithreaded matrix multiplication using only boost library.
 
 ![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/3c4c4680-fada-41d4-986e-133dae4e0232)
@@ -7,7 +7,7 @@ An example of using the apps api's (using postman)
 ### Installation
 You have to install boost library and C++ (>11) to be able to run the run_server.cpp file.
 
-For package installing in c++, you can use [this link](https://vcpkg.io/en/getting-started.html).
+For package installing in C++, you can use [this link](https://vcpkg.io/en/getting-started.html).
 ### Usage
 This c++ code, starts a server on your **http://localhost:8080/** 
 
