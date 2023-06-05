@@ -1,6 +1,4 @@
 #include <iostream>
-#include <vector>
-#include <map>
 #include <sstream>
 #include <string>
 #include <semaphore.h>
@@ -231,8 +229,21 @@ private:
         }
         else if (requestTypeStr == "POST" && requestAddressStr == "/change_maximum_matrix_workers")
         {
-            int maximum_matrix_workers = std::stoi(requestBodyStr); // Using a built in function to convert the body string to int
-            Matrix::changeMaximumInnerWorkers(maximum_matrix_workers); // Using the static method of Matrix class to change number of workers
+            try
+            {
+                int maximum_matrix_workers = std::stoi(requestBodyStr); // Using a built in function to convert the body string to int
+                Matrix::changeMaximumInnerWorkers(maximum_matrix_workers); // Using the static method of Matrix class to change number of workers
+                reponseBodyStr = "Maximum matrix workers count has been changed to " + to_string(maximum_matrix_workers);
+                doWrite();
+            }
+            catch (const std::exception& ex)
+            {
+                cout << "Exception: " << ex.what() << endl;
+
+                // Sending the exception to client
+                reponseBodyStr = ex.what();
+                doWrite();
+            }
         }
         if (requestTypeStr == "POST" && requestAddressStr == "/check")
         {
