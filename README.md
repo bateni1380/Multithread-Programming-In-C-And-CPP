@@ -97,11 +97,11 @@ class Session
 public:
     Session(io_service& io_service, strand& strand);
     socket& socket();
-    void start()
+    void start();
 private:
-    void doRead()
-    void doJob()
-    void doWrite()
+    void doRead();
+    void doJob();
+    void doWrite();
 
     socket socket_;
     strand& strand_;
@@ -122,10 +122,10 @@ In **doRead()** function, it reads the information from the request and fills **
 class Server
 {
 public:
-    Server(io_service& io_service, strand& strand, const endpoint& endpoint)
+    Server(io_service& io_service, strand& strand, const endpoint& endpoint);
 private:
-    void run()
-    void onAccept(shared_ptr<Session> new_session, const error_code& error)
+    void run();
+    void onAccept(shared_ptr<Session> new_session, const error_code& error);
     io_service& io_service_;
     strand& strand_;
     acceptor acceptor_;
