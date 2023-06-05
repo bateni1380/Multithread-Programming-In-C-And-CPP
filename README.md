@@ -15,6 +15,7 @@ You have to feed each matrix in each line of your request body. For example:
 9, 8, 7; 6, 5, 4; 3, 2, 1
 ```
 This is equivalent to multiplication of the following matrices.
+####
 $$
 \begin{array}{cc}
 \begin{bmatrix}
