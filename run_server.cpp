@@ -196,7 +196,7 @@ private:
     // Using requestTypeStr and requestAddressStr and requestBodyStr to calculate reponseBodyStr
     void doJob()
     {
-        if (requestTypeStr == "POST" && requestAddressStr == "/matrix_multiplation")
+        if (requestTypeStr == "POST" && requestAddressStr == "/matrix_multiplication")
         {
             try
             {
@@ -210,7 +210,7 @@ private:
                     matrices.push_back(Matrix(rowString));
                 }
 
-                // Calculating the multiplation of the matrices corresponding to first line and second line of the request
+                // Calculating the multiplication of the matrices corresponding to first line and second line of the request
                 Matrix c = matrices[0] * matrices[1];
 
                 // Converting the answer to a propper string and putting it in reponseBodyStr to be sent back
