@@ -2,7 +2,6 @@
 This is a cpp server which provides multithreaded matrix multiplication using only boost library.
 
 ![An example of using the apps api's (using postman)](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/e8d6ebe0-bfcd-4423-a5b5-b6d0ce613104)
-
 An example of using the apps api's (using postman)
 
 ### Installation
