@@ -7,6 +7,7 @@ An example of using the apps api's (using postman)
 ### Installation
 You have to install boost library and C++ (>11) to be able to run the run_server.cpp file.
 
+For package installing in c++, you can use this link [link](https://vcpkg.io/en/getting-started.html)
 ### Usage
 This c++ code, starts a server on your **http://localhost:8080/** 
 
