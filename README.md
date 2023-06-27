@@ -1,16 +1,17 @@
 ## Multithreaded Matrix Multiplication C++ Server
 This was a project for Operating System course tought by Dr. Bejani in June 2023 at Amirkabir University of Tecknology.
 
-This is a cpp server which provides multithreaded matrix multiplication using only boost library.
+The run_server.cpp is a cpp server which provides multithreaded matrix multiplication using only boost library.
+The grep.c is another project for my os course which is a simple implementation of grep in c (not c++) using built-in libraries of c in linux.
 
 ![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/3c4c4680-fada-41d4-986e-133dae4e0232)
-An example of using the apps api's (using postman)
+An example of using the run_server.cpp api's (using postman)
 
-### Installation
+### Installation (run_server.cpp)
 You have to install boost library and C++ (>11) to be able to run the run_server.cpp file.
 
 For package installing in C++, you can use [this link](https://vcpkg.io/en/getting-started.html).
-### Usage
+### Usage (run_server.cpp)
 This c++ code, starts a server on your **http://localhost:8080/** 
 
 #### /matrix_multiplation
@@ -49,7 +50,7 @@ You just need to feed amount of desired workers as the request body. For example
 ```
 10
 ```
-### Code Review (explaining main classes and includes)
+### Code Review: explaining main classes and includes (run_server.cpp)
 The following libraries have been included in this project. 
 ```c++
 #include <iostream>
@@ -141,3 +142,9 @@ This class is the server class which accepts requests and makes a new session fo
 
 
 
+### Installation (grep.c)
+You just need to install c compiler.
+```bash
+sudo apt update
+sudo apt install build-essential
+```
