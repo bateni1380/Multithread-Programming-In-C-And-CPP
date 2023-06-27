@@ -142,10 +142,87 @@ This class is the server class which accepts requests and makes a new session fo
 
 
 #
-##
+
 ### Installation (grep.c)
-You just need to install c compiler.
+You just need to install C compiler in a linux os. 
+
+(for example Ubuntu)
+
 ```bash
 sudo apt update
 sudo apt install build-essential
 ```
+
+Note that this C code can be executed only in linux. (not windows)
+
+### Usage (grep.c)
+First you need to compile your project using gcc compiler.
+
+(for example if your C file was named grep.c)
+
+```bash
+ gcc grep.c -o grep
+```
+
+Then you need to run the executable file and specify options afterwards.
+
+```bash
+sudo ./grep [pattern] [isSearchingFile] [isShowingLine] [maxSearchDepth] [maxWorkingThreads] [isReverseGrep]
+```
+In the code above, pattern corresponds to the regx format that you are looking for. 
+
+isSearchingFile indicates if you wanna search files contents or folder names.
+
+isShowingLine says if you want to write line of found pattern in the file or not.
+
+maxSearchDepth is the maximum depth of search in folders
+
+maxWorkingThreads is the maximum number of threads that can be executed simultaneously
+
+isReverseGrep indicates if you wanna print the lines that doesn't have the pattern in them or does.
+
+An example of using the grep is shown below.
+
+```bash
+sudo ./grep he[a-z]llo 1 1 10 3 0
+```
+
+### Code Review: explaining main functions and includes (grep.c)
+The following libraries have been included in this project. 
+```c
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <semaphore.h>
+#include <dirent.h>
+#include <sys/stat.h>
+#include <regex.h>
+```
+We need three first namespaces for working with strings and streams in the code.
+
+We need semaphore for handling the amount of threads  which can search at the same time.
+
+We need thread to define a thread for each file searching. (then we limit it using semaphore)
+
+We need fourth and fifth library for accessing folders and files in system (linux)
+
+We need last library to match the regx pattern with folder names or file contents.
+
+##
+```c
+void check_folder_name(char* path, char* f_name);
+```
+This is a function that gets the folder name and path and prints its name if the pattern matches the folder name.
+##
+```c
+void* search_file(void* arg);
+```
+This function searchs for the pattern for every lines of a file...The arg input is just the path and its basicly a char* but beacuase we wanna run this function in a thread, the input must be void* and we convert it to char* afterwards.
+
+Also, this function uses semaphore so no more than [maxWorkingThreads] threads of search_file can be executed simultaneously.
+##
+```c
+void search_directory(const char* directory, int depth, int max_depth);
+```
+This function searchs all the directories recursively.
