@@ -9,7 +9,7 @@ The grep.c is another project for my os course which is a simple implementation 
 ## Multithreaded Matrix Multiplication C++ Server
 The run_server.cpp is a cpp server which provides multithreaded matrix multiplication using only boost library.
 
-![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/3c4c4680-fada-41d4-986e-133dae4e0232)
+![Capture](https://github.com/bateni1380/Multithread-Programming-In-C-And-CPP/assets/65423010/84b83b50-f775-4db9-840e-ebbc7548cdb3)
 
 An example of using the run_server.cpp api's (using postman)
 ### Installation (run_server.cpp)
