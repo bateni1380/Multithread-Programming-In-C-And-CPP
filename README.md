@@ -5,9 +5,13 @@ The run_server.cpp is a cpp server which provides multithreaded matrix multiplic
 The grep.c is another project for my os course which is a simple implementation of grep in c (not c++) using built-in libraries of c in linux.
 
 ![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/3c4c4680-fada-41d4-986e-133dae4e0232)
+
 An example of using the run_server.cpp api's (using postman)
+
 #
+
 ![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/031806a3-9df0-4cf9-8d8b-edf1ac616378)
+
 An example of using the grep.c (using Ubunto subsystem in windows 10)
 
 ### Installation (run_server.cpp)
