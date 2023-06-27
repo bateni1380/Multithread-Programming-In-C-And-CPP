@@ -1,19 +1,15 @@
-## Multithreaded Matrix Multiplication C++ Server
-This was a project for Operating System course tought by Dr. Bejani in June 2023 at Amirkabir University of Tecknology.
-
+# Multithreaded Matrix Multiplication (C++) and Linux Grep (C)
+This was two project's for Operating System course tought by Dr. Bejani in June 2023 at Amirkabir University of Tecknology.
 The run_server.cpp is a cpp server which provides multithreaded matrix multiplication using only boost library.
-The grep.c is another project for my os course which is a simple implementation of grep in c (not c++) using built-in libraries of c in linux.
+The grep.c is another project for my os course which is a simple implementation of grep in C (not c++) which search for regx patterns in folders using built-in libraries of C in linux.
+
+
+## Multithreaded Matrix Multiplication C++ Server
+The run_server.cpp is a cpp server which provides multithreaded matrix multiplication using only boost library.
 
 ![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/3c4c4680-fada-41d4-986e-133dae4e0232)
 
 An example of using the run_server.cpp api's (using postman)
-
-#
-
-![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/031806a3-9df0-4cf9-8d8b-edf1ac616378)
-
-An example of using the grep.c (using Ubunto subsystem in windows 10)
-
 ### Installation (run_server.cpp)
 You have to install boost library and C++ (>11) to be able to run the run_server.cpp file.
 
@@ -149,6 +145,15 @@ This class is the server class which accepts requests and makes a new session fo
 
 
 #
+
+## Grep
+The grep.c is a simple implementation of grep in C (not c++) using built-in libraries of C in linux.
+
+This program is like grep in linux. It searchs for an specefic regx pattern in a root directory.
+
+![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/031806a3-9df0-4cf9-8d8b-edf1ac616378)
+
+An example of using the grep.c (using Ubunto subsystem in windows 10)
 
 ### Installation (grep.c)
 You just need to install C compiler in a linux os. 
