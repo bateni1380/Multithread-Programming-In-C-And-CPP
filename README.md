@@ -3,7 +3,7 @@ This was two project's for Operating System course tought by Dr. Bejani in June 
 
 The run_server.cpp is a C++ server which provides multithreaded matrix multiplication api's using only boost library.
 
-The grep.c is another project for my OS course which is a simple implementation of grep in C (not c++) which search for regx patterns in folders using built-in libraries of C in linux.
+The grep.c is another project for my OS course which is a simple implementation of grep in C (not c++) which searchs for regx patterns in folders using built-in libraries of C in linux.
 
 
 ## Multithreaded Matrix Multiplication C++ Server
