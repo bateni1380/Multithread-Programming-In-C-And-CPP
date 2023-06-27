@@ -1,5 +1,5 @@
 // Copyright: Mohammad Reza Bateni
-// https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server
+// https://github.com/bateni1380/Multithread-Programming-In-C-And-CPP/
 
 #include <iostream>
 #include <sstream>
