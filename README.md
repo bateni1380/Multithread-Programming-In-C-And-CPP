@@ -1,4 +1,4 @@
-# Multithreaded Matrix Multiplication (C++) and Linux Grep (C)
+# Matrix Multiplication Server (C++) and Linux Grep (C)
 This was two project's for Operating System course tought by Dr. Bejani in June 2023 at Amirkabir University of Tecknology.
 
 The run_server.cpp is a cpp server which provides multithreaded matrix multiplication api's using only boost library.
