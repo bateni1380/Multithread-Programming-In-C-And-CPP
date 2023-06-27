@@ -153,7 +153,7 @@ The grep.c is a simple implementation of grep in C (not c++) using built-in libr
 
 This program is like grep in linux. It searchs for an specefic regx pattern in a root directory.
 
-![Capture](https://github.com/bateni1380/Multithreaded-Matrix-Multiplication-CPP-Server/assets/65423010/031806a3-9df0-4cf9-8d8b-edf1ac616378)
+![Capture](https://github.com/bateni1380/Multithread-Programming-In-C-And-CPP/assets/65423010/36c3d9cf-cec9-424e-ac0f-36e87bff0d8f)
 
 An example of using the grep.c (using Ubunto subsystem in windows 10)
 
