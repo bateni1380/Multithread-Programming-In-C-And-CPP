@@ -1,3 +1,6 @@
+// Copyright: Mohammad Reza Bateni
+// https://github.com/bateni1380/Multithread-Programming-In-C-And-CPP/
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
