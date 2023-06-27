@@ -156,13 +156,14 @@ sudo apt install build-essential
 Note that this C code can be executed only in linux. (not windows)
 
 ### Usage (grep.c)
-First you need to compile your project using gcc compiler.
+First, you need to compile your project using gcc compiler.
 
 (for example if your C file was named grep.c)
 
 ```bash
  gcc grep.c -o grep
 ```
+Second, you need to have all the files and folders that you want to be searched in a floder named root beside the executable file.
 
 Then you need to run the executable file and specify options afterwards.
 
