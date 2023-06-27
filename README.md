@@ -179,7 +179,7 @@ First, you need to compile your project using gcc compiler.
 ```bash
  gcc grep.c -o grep
 ```
-Second, you need to have all the files and folders that you want to be searched in a floder named root beside the executable file.
+Second, you need to have all the files and folders that you want to be searched in a folder named root beside the executable file.
 
 Then you need to run the executable file and specify options afterwards.
 
