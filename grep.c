@@ -31,7 +31,7 @@ void check_folder_name(char* path, char* f_name)
     regex_t regex;
     regcomp(&regex, pattern, REG_EXTENDED);
     int notRegxFound = regexec(&regex, f_name, 0, NULL, 0);
-    if(notRegxFound==0)
+    if ((notRegxFound == 0 && isReverseGrep == 0)||(notRegxFound == 1 && isReverseGrep == 1))
         printf("(folder)%s: %s\n", path, f_name);
     regfree(&regex);
 }
@@ -164,3 +164,4 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
